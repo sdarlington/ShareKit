@@ -366,6 +366,14 @@
 		C4823E2F192936290099673A /* SHK1Password.m in Sources */ = {isa = PBXBuildFile; fileRef = C4823E23192935A90099673A /* SHK1Password.m */; };
 		C4823E32192936570099673A /* libOpen in 1Password.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C4823E2E192936150099673A /* libOpen in 1Password.a */; };
 		C4B1545B192E08050080EBE3 /* libReadingList.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C4B15457192E077E0080EBE3 /* libReadingList.a */; };
+		C4D83690199BA79900E80A20 /* SHKSharers.plist in Resources */ = {isa = PBXBuildFile; fileRef = 43A536AC11DBE3B9004A1712 /* SHKSharers.plist */; };
+		C4D83692199BA79900E80A20 /* DETweetPaperClip.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A107CDE17AA4E75009A7F0E /* DETweetPaperClip.png */; };
+		C4D83693199BA79900E80A20 /* DETweetPaperClip@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A107CDF17AA4E76009A7F0E /* DETweetPaperClip@2x.png */; };
+		C4D83694199BA79900E80A20 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7A9FEF1E180403520053CB40 /* Localizable.strings */; };
+		C4D83695199BA79900E80A20 /* DETweetURLAttachment.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A107CE017AA4E78009A7F0E /* DETweetURLAttachment.png */; };
+		C4D83696199BA79900E80A20 /* DETweetURLAttachment@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A107CE117AA4E79009A7F0E /* DETweetURLAttachment@2x.png */; };
+		C4D83697199BA79900E80A20 /* SHKShareFileIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7ADF827F17ABBD7F007634E8 /* SHKShareFileIcon.png */; };
+		C4D83698199BA79900E80A20 /* SHKShareFileIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7ADF828017ABBD7F007634E8 /* SHKShareFileIcon@2x.png */; };
 		CE857E3C16771F7C005003DA /* SHKVKontakteRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = CE857E3816771D78005003DA /* SHKVKontakteRequest.m */; };
 		DE334C2216F3339300FF692B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		DE334C2D16F3339A00FF692B /* SHKDropbox.m in Sources */ = {isa = PBXBuildFile; fileRef = DE334C0616F3319800FF692B /* SHKDropbox.m */; };
@@ -1283,6 +1291,7 @@
 		C4823E2E192936150099673A /* libOpen in 1Password.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libOpen in 1Password.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4B15457192E077E0080EBE3 /* libReadingList.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libReadingList.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4B15458192E07A60080EBE3 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
+		C4D8369C199BA79900E80A20 /* Resource Bundle (No Buffer).bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Resource Bundle (No Buffer).bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE857E3716771D78005003DA /* SHKVKontakteRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHKVKontakteRequest.h; sourceTree = "<group>"; };
 		CE857E3816771D78005003DA /* SHKVKontakteRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHKVKontakteRequest.m; sourceTree = "<group>"; };
 		DE334C0516F3319800FF692B /* SHKDropbox.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SHKDropbox.h; sourceTree = "<group>"; };
@@ -1681,6 +1690,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C4D8368E199BA79900E80A20 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DE334C1E16F3339300FF692B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -1751,6 +1767,7 @@
 				C4823E1B192932780099673A /* libOpen in Chrome.a */,
 				C4823E2E192936150099673A /* libOpen in 1Password.a */,
 				C4B15457192E077E0080EBE3 /* libReadingList.a */,
+				C4D8369C199BA79900E80A20 /* Resource Bundle (No Buffer).bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -4207,6 +4224,23 @@
 			productReference = C4B15457192E077E0080EBE3 /* libReadingList.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		C4D8368C199BA79900E80A20 /* Resource Bundle (No Buffer) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4D83699199BA79900E80A20 /* Build configuration list for PBXNativeTarget "Resource Bundle (No Buffer)" */;
+			buildPhases = (
+				C4D8368D199BA79900E80A20 /* Sources */,
+				C4D8368E199BA79900E80A20 /* Frameworks */,
+				C4D8368F199BA79900E80A20 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Resource Bundle (No Buffer)";
+			productName = ShareKit;
+			productReference = C4D8369C199BA79900E80A20 /* Resource Bundle (No Buffer).bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
 		DE334C2016F3339300FF692B /* Dropbox */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = DE334C2A16F3339400FF692B /* Build configuration list for PBXNativeTarget "Dropbox" */;
@@ -4304,7 +4338,6 @@
 				AABBED7E162F0C4D009D46E4 /* Tumbl */,
 				7A1AFD2B160E14340086B98A /* Twitter */,
 				AABBED12162F08A3009D46E4 /* VKontakte */,
-				7AC2A38E16597F4C0089ABE8 /* Sina Weibo */,
 				7A49DBBB16BC193E004B7E78 /* Readability */,
 				7A203D0216EB7DA200421995 /* Hatena */,
 				7AAE8C9D16EB960500429C51 /* Plurk */,
@@ -4322,6 +4355,7 @@
 				C4823E13192932780099673A /* Open in Chrome */,
 				C4823E26192936150099673A /* Open in 1Password */,
 				C4B1544F192E077E0080EBE3 /* Reading List */,
+				C4D8368C199BA79900E80A20 /* Resource Bundle (No Buffer) */,
 			);
 		};
 /* End PBXProject section */
@@ -4352,6 +4386,21 @@
 				7A107CE717AA4E7A009A7F0E /* DETweetURLAttachment@2x.png in Resources */,
 				7ADF828117ABBD7F007634E8 /* SHKShareFileIcon.png in Resources */,
 				7ADF828217ABBD7F007634E8 /* SHKShareFileIcon@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4D8368F199BA79900E80A20 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4D83690199BA79900E80A20 /* SHKSharers.plist in Resources */,
+				C4D83692199BA79900E80A20 /* DETweetPaperClip.png in Resources */,
+				C4D83693199BA79900E80A20 /* DETweetPaperClip@2x.png in Resources */,
+				C4D83694199BA79900E80A20 /* Localizable.strings in Resources */,
+				C4D83695199BA79900E80A20 /* DETweetURLAttachment.png in Resources */,
+				C4D83696199BA79900E80A20 /* DETweetURLAttachment@2x.png in Resources */,
+				C4D83697199BA79900E80A20 /* SHKShareFileIcon.png in Resources */,
+				C4D83698199BA79900E80A20 /* SHKShareFileIcon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4852,6 +4901,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				7ADE63ED19363CCD00826F63 /* SHKReadingList.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4D8368D199BA79900E80A20 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -7359,6 +7415,56 @@
 			};
 			name = Release;
 		};
+		C4D8369A199BA79900E80A20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				INFOPLIST_FILE = "ShareKitLibraryResources/ShareKitLibraryResources-Info.plist";
+				INSTALL_PATH = "";
+				PRODUCT_NAME = "Resource Bundle (No Buffer)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		C4D8369B199BA79900E80A20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "";
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				INFOPLIST_FILE = "ShareKitLibraryResources/ShareKitLibraryResources-Info.plist";
+				INSTALL_PATH = "";
+				PRODUCT_NAME = "Resource Bundle (No Buffer)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
 		DE334C2B16F3339400FF692B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -7849,6 +7955,15 @@
 			buildConfigurations = (
 				C4B15455192E077E0080EBE3 /* Debug */,
 				C4B15456192E077E0080EBE3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4D83699199BA79900E80A20 /* Build configuration list for PBXNativeTarget "Resource Bundle (No Buffer)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4D8369A199BA79900E80A20 /* Debug */,
+				C4D8369B199BA79900E80A20 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
