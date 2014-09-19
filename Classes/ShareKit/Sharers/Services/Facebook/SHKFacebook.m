@@ -84,32 +84,35 @@
                          sourceApplication:sourceApplication
                                withSession:[FBSession activeSession]];
     
-    NSRange rangeOfWritePermissions = [[url absoluteString] rangeOfString:SHKCONFIG(facebookWritePermissions)[0]];
-    BOOL gotReadPermissionsOnly =  rangeOfWritePermissions.location == NSNotFound;
-    if (gotReadPermissionsOnly) {
-        [FBSession openActiveSessionWithReadPermissions:SHKCONFIG(facebookReadPermissions) allowLoginUI:NO completionHandler:^(FBSession *session, FBSessionState status, NSError *error) {
+    SHKFacebook *facebookSharer = [[SHKFacebook alloc] init];
+    BOOL itemRestored = [facebookSharer restoreItem];
+    
+    if (itemRestored) {
+        FBSessionStateHandler handler = ^(FBSession *session, FBSessionState status, NSError *error) {
             
             if (error) {
+                [facebookSharer saveItemForLater:facebookSharer.pendingAction];
                 SHKLog(@"no read permissions: %@", [error description]);
             } else {
                 
-                SHKFacebook *facebookSharer = [[SHKFacebook alloc] init];
-                //if this was result of login during first share
-                BOOL itemRestored = [facebookSharer restoreItem];
-                if (itemRestored) {
-                    
-                    //this allows for completion block to finish and continue sharing AFTER. Otherwise strange black windows and orphan webview login showed up.
-                    dispatch_async(dispatch_get_main_queue(), ^{
-                        [facebookSharer tryPendingAction];
-                    });
-                }
+                //this allows for completion block to finish and continue sharing AFTER. Otherwise strange black windows and orphan webview login showed up.
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    [facebookSharer tryPendingAction];
+                });
             }
-        }];
+        };
         
-    } else {
-        
-        //I do not know why, but this completion handler is never called - instead the one provided during requestNewPublishPermissions: within send method is. This has a consequence, that if the app gets killed before the SSO trip to Safari/Facebook.app returns, the share does not continue after getting write permissions. The reason is that the block does not exist anymore.
-        [FBSession openActiveSessionWithPublishPermissions:SHKCONFIG(facebookWritePermissions) defaultAudience:FBSessionDefaultAudienceFriends allowLoginUI:NO completionHandler:nil];
+        if ([[FBSession activeSession] isOpen]) {
+            handler([FBSession activeSession], [FBSession activeSession].state, nil);
+        } else {
+            NSRange rangeOfWritePermissions = [[url absoluteString] rangeOfString:SHKCONFIG(facebookWritePermissions)[0]];
+            BOOL gotReadPermissionsOnly =  rangeOfWritePermissions.location == NSNotFound;
+            if (gotReadPermissionsOnly) {
+                [FBSession openActiveSessionWithReadPermissions:SHKCONFIG(facebookReadPermissions) allowLoginUI:NO completionHandler:handler];
+            } else {
+                [FBSession openActiveSessionWithPublishPermissions:SHKCONFIG(facebookWritePermissions) defaultAudience:FBSessionDefaultAudienceFriends allowLoginUI:NO completionHandler:handler];
+            }
+        }
     }
     
     if (result) {
@@ -182,9 +185,12 @@
 
 - (void)promptAuthorization
 {
-    [self saveItemForLater:self.pendingAction];
+    [self saveItemForLater:SHKPendingShare];
     
-    FBSession *authSession = [[FBSession alloc] initWithPermissions:SHKCONFIG(facebookReadPermissions)];
+    NSMutableArray* permissions = [NSMutableArray arrayWithArray:SHKCONFIG(facebookWritePermissions)];
+    [permissions addObjectsFromArray:SHKCONFIG(facebookReadPermissions)];
+    
+    FBSession *authSession = [[FBSession alloc] initWithPermissions:permissions];
     
     //completion happens within class method handleOpenURL:sourceApplication, thus nil handler here
     [authSession openWithCompletionHandler:nil];
