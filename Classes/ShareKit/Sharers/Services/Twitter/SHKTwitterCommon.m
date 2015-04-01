@@ -12,6 +12,7 @@
 #import "SharersCommonHeaders.h"
 #import "SHKXMLResponseParser.h"
 #import "SHKSharer.h"
+#import <Social/Social.h>
 
 NSString * const kSHKTwitterUserInfo=@"kSHKTwitterUserInfo";
 NSString * const kSHKiOSTwitterUserInfo = @"kSHKiOSTwitterUserInfo";
@@ -82,7 +83,7 @@ NSString * const SHKTwitterAPIMediaUploadURL = @"https://upload.twitter.com/1.1/
     
 	if (NSClassFromString(@"SLComposeViewController"))
     {
-		return YES;
+		return [SLComposeViewController isAvailableForServiceType:SLServiceTypeTwitter];
 	}
 	
 	return NO;
