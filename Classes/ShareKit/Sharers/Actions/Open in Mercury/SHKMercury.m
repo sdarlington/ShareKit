@@ -33,7 +33,7 @@
 
 + (NSString *)sharerTitle
 {
-    return SHKLocalizedString(@"Open in Mercury Browser");
+    return SHKLocalizedString(@"Open in Mercury");
 }
 
 + (BOOL)canShareURL
