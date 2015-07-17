@@ -373,6 +373,11 @@
 		C4823E2F192936290099673A /* SHK1Password.m in Sources */ = {isa = PBXBuildFile; fileRef = C4823E23192935A90099673A /* SHK1Password.m */; };
 		C4823E32192936570099673A /* libOpen in 1Password.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C4823E2E192936150099673A /* libOpen in 1Password.a */; };
 		C4B1545B192E08050080EBE3 /* libReadingList.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C4B15457192E077E0080EBE3 /* libReadingList.a */; };
+		C4F85B2A1B59102D00A252B3 /* SHKDiigoBrowser.h in Headers */ = {isa = PBXBuildFile; fileRef = C4F85B281B59102D00A252B3 /* SHKDiigoBrowser.h */; };
+		C4F85B391B59297300A252B3 /* SHKDiigoBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = C4F85B291B59102D00A252B3 /* SHKDiigoBrowser.m */; };
+		C4F85B3A1B5929B000A252B3 /* libOpen in Diigo Browser.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C4F85B381B59295000A252B3 /* libOpen in Diigo Browser.a */; };
+		C4F85B471B592E2700A252B3 /* SHKMercury.m in Sources */ = {isa = PBXBuildFile; fileRef = C4F85B3C1B592DED00A252B3 /* SHKMercury.m */; };
+		C4F85B481B592E4300A252B3 /* libOpen in Mercury.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C4F85B461B592E1400A252B3 /* libOpen in Mercury.a */; };
 		CE857E3C16771F7C005003DA /* SHKVKontakteRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = CE857E3816771D78005003DA /* SHKVKontakteRequest.m */; };
 		DE334C2216F3339300FF692B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		DE334C2D16F3339A00FF692B /* SHKDropbox.m in Sources */ = {isa = PBXBuildFile; fileRef = DE334C0616F3319800FF692B /* SHKDropbox.m */; };
@@ -701,6 +706,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = C4B1544F192E077E0080EBE3;
 			remoteInfo = "Reading List";
+		};
+		C4F85B491B592E5000A252B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C4F85B3E1B592E1400A252B3;
+			remoteInfo = "Open in Mercury";
 		};
 		DE334C2F16F333B000FF692B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -1314,6 +1326,12 @@
 		C4823E2E192936150099673A /* libOpen in 1Password.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libOpen in 1Password.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4B15457192E077E0080EBE3 /* libReadingList.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libReadingList.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4B15458192E07A60080EBE3 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
+		C4F85B281B59102D00A252B3 /* SHKDiigoBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SHKDiigoBrowser.h; path = "Open in Diigo Browser/SHKDiigoBrowser.h"; sourceTree = "<group>"; };
+		C4F85B291B59102D00A252B3 /* SHKDiigoBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SHKDiigoBrowser.m; path = "Open in Diigo Browser/SHKDiigoBrowser.m"; sourceTree = "<group>"; };
+		C4F85B381B59295000A252B3 /* libOpen in Diigo Browser.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libOpen in Diigo Browser.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4F85B3B1B592DED00A252B3 /* SHKMercury.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SHKMercury.h; path = "Open in Mercury/SHKMercury.h"; sourceTree = "<group>"; };
+		C4F85B3C1B592DED00A252B3 /* SHKMercury.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SHKMercury.m; path = "Open in Mercury/SHKMercury.m"; sourceTree = "<group>"; };
+		C4F85B461B592E1400A252B3 /* libOpen in Mercury.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libOpen in Mercury.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE857E3716771D78005003DA /* SHKVKontakteRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHKVKontakteRequest.h; sourceTree = "<group>"; };
 		CE857E3816771D78005003DA /* SHKVKontakteRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHKVKontakteRequest.m; sourceTree = "<group>"; };
 		DE334C0516F3319800FF692B /* SHKDropbox.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SHKDropbox.h; sourceTree = "<group>"; };
@@ -1467,6 +1485,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4F85B481B592E4300A252B3 /* libOpen in Mercury.a in Frameworks */,
+				C4F85B3A1B5929B000A252B3 /* libOpen in Diigo Browser.a in Frameworks */,
 				7A278E891A93D1620065B351 /* libWhatsApp.a in Frameworks */,
 				C4B1545B192E08050080EBE3 /* libReadingList.a in Frameworks */,
 				C4823E32192936570099673A /* libOpen in 1Password.a in Frameworks */,
@@ -1728,6 +1748,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C4F85B331B59295000A252B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4F85B411B592E1400A252B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DE334C1E16F3339300FF692B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -1800,6 +1834,8 @@
 				C4B15457192E077E0080EBE3 /* libReadingList.a */,
 				7A5340CA1A1F3B6100659425 /* libiso-8601-date-formatter.a */,
 				7A278E801A93D0B90065B351 /* libWhatsApp.a */,
+				C4F85B381B59295000A252B3 /* libOpen in Diigo Browser.a */,
+				C4F85B461B592E1400A252B3 /* libOpen in Mercury.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -2181,13 +2217,11 @@
 		43A536B611DBE3B9004A1712 /* Actions */ = {
 			isa = PBXGroup;
 			children = (
+				C4F85B271B590FA400A252B3 /* Open in... */,
 				7ADE63E919363CCD00826F63 /* Add to Safari Reading List */,
 				43A536B711DBE3B9004A1712 /* Copy */,
 				43A536BA11DBE3B9004A1712 /* Email */,
 				E68738B6141677C000D8C3DD /* Logout */,
-				43A536BD11DBE3B9004A1712 /* Open in Safari */,
-				C4823E0D192931500099673A /* Open in Chrome */,
-				C4823E21192935620099673A /* Open in 1Password */,
 				BA465F1C14CC3C5000B52394 /* Print */,
 				432B147911FF4B0700291B37 /* Save to Album */,
 				4379F3AF1291C45700D2A41E /* Text Message */,
@@ -2952,6 +2986,36 @@
 			path = "Open in 1Password";
 			sourceTree = "<group>";
 		};
+		C4F85B261B590F4600A252B3 /* Open in Diigo Browser */ = {
+			isa = PBXGroup;
+			children = (
+				C4F85B281B59102D00A252B3 /* SHKDiigoBrowser.h */,
+				C4F85B291B59102D00A252B3 /* SHKDiigoBrowser.m */,
+			);
+			name = "Open in Diigo Browser";
+			sourceTree = "<group>";
+		};
+		C4F85B271B590FA400A252B3 /* Open in... */ = {
+			isa = PBXGroup;
+			children = (
+				C4F85B261B590F4600A252B3 /* Open in Diigo Browser */,
+				C4F85B3D1B592DF400A252B3 /* Open in Mercury */,
+				43A536BD11DBE3B9004A1712 /* Open in Safari */,
+				C4823E0D192931500099673A /* Open in Chrome */,
+				C4823E21192935620099673A /* Open in 1Password */,
+			);
+			name = "Open in...";
+			sourceTree = "<group>";
+		};
+		C4F85B3D1B592DF400A252B3 /* Open in Mercury */ = {
+			isa = PBXGroup;
+			children = (
+				C4F85B3B1B592DED00A252B3 /* SHKMercury.h */,
+				C4F85B3C1B592DED00A252B3 /* SHKMercury.m */,
+			);
+			name = "Open in Mercury";
+			sourceTree = "<group>";
+		};
 		DE334C0316F3315D00FF692B /* Dropbox */ = {
 			isa = PBXGroup;
 			children = (
@@ -3167,6 +3231,7 @@
 				7AE8DC7C165B549B004D99D2 /* DummyLibFile.h in Headers */,
 				C4823E24192935A90099673A /* SHK1Password.h in Headers */,
 				C4823E10192931730099673A /* SHKChrome.h in Headers */,
+				C4F85B2A1B59102D00A252B3 /* SHKDiigoBrowser.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3440,6 +3505,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				7ADE63EC19363CCD00826F63 /* SHKReadingList.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4F85B341B59295000A252B3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4F85B421B592E1400A252B3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3764,6 +3843,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				C4F85B4A1B592E5000A252B3 /* PBXTargetDependency */,
 				7A278E881A93D14E0065B351 /* PBXTargetDependency */,
 				C4B1545D192E08100080EBE3 /* PBXTargetDependency */,
 				C4823E311929364D0099673A /* PBXTargetDependency */,
@@ -4326,6 +4406,40 @@
 			productReference = C4B15457192E077E0080EBE3 /* libReadingList.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		C4F85B301B59295000A252B3 /* Open in Diigo Browser */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4F85B351B59295000A252B3 /* Build configuration list for PBXNativeTarget "Open in Diigo Browser" */;
+			buildPhases = (
+				C4F85B311B59295000A252B3 /* Sources */,
+				C4F85B331B59295000A252B3 /* Frameworks */,
+				C4F85B341B59295000A252B3 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Open in Diigo Browser";
+			productName = ShareKitLibrary;
+			productReference = C4F85B381B59295000A252B3 /* libOpen in Diigo Browser.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		C4F85B3E1B592E1400A252B3 /* Open in Mercury */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4F85B431B592E1400A252B3 /* Build configuration list for PBXNativeTarget "Open in Mercury" */;
+			buildPhases = (
+				C4F85B3F1B592E1400A252B3 /* Sources */,
+				C4F85B411B592E1400A252B3 /* Frameworks */,
+				C4F85B421B592E1400A252B3 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Open in Mercury";
+			productName = ShareKitLibrary;
+			productReference = C4F85B461B592E1400A252B3 /* libOpen in Mercury.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 		DE334C2016F3339300FF692B /* Dropbox */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = DE334C2A16F3339400FF692B /* Build configuration list for PBXNativeTarget "Dropbox" */;
@@ -4442,6 +4556,8 @@
 				C4B1544F192E077E0080EBE3 /* Reading List */,
 				7A5340C11A1F3B6100659425 /* iso-8601-date-formatter */,
 				7A278E781A93D0B90065B351 /* WhatsApp */,
+				C4F85B301B59295000A252B3 /* Open in Diigo Browser */,
+				C4F85B3E1B592E1400A252B3 /* Open in Mercury */,
 			);
 		};
 /* End PBXProject section */
@@ -4991,6 +5107,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C4F85B311B59295000A252B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4F85B391B59297300A252B3 /* SHKDiigoBrowser.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4F85B3F1B592E1400A252B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4F85B471B592E2700A252B3 /* SHKMercury.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DE334C1D16F3339300FF692B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -5231,6 +5363,11 @@
 			isa = PBXTargetDependency;
 			target = C4B1544F192E077E0080EBE3 /* Reading List */;
 			targetProxy = C4B1545C192E08100080EBE3 /* PBXContainerItemProxy */;
+		};
+		C4F85B4A1B592E5000A252B3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C4F85B3E1B592E1400A252B3 /* Open in Mercury */;
+			targetProxy = C4F85B491B592E5000A252B3 /* PBXContainerItemProxy */;
 		};
 		DE334C3016F333B000FF692B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -7602,6 +7739,92 @@
 			};
 			name = Release;
 		};
+		C4F85B361B59295000A252B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/ShareKitLibrary.dst;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ShareKitLibrary/ShareKitLibrary-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "Open in Diigo Browser";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		C4F85B371B59295000A252B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DSTROOT = /tmp/ShareKitLibrary.dst;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ShareKitLibrary/ShareKitLibrary-Prefix.pch";
+				GCC_THUMB_SUPPORT = NO;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "Open in Diigo Browser";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		C4F85B441B592E1400A252B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/ShareKitLibrary.dst;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ShareKitLibrary/ShareKitLibrary-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "Open in Mercury";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		C4F85B451B592E1400A252B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DSTROOT = /tmp/ShareKitLibrary.dst;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ShareKitLibrary/ShareKitLibrary-Prefix.pch";
+				GCC_THUMB_SUPPORT = NO;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "Open in Mercury";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		DE334C2B16F3339400FF692B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -8110,6 +8333,24 @@
 			buildConfigurations = (
 				C4B15455192E077E0080EBE3 /* Debug */,
 				C4B15456192E077E0080EBE3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4F85B351B59295000A252B3 /* Build configuration list for PBXNativeTarget "Open in Diigo Browser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4F85B361B59295000A252B3 /* Debug */,
+				C4F85B371B59295000A252B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4F85B431B592E1400A252B3 /* Build configuration list for PBXNativeTarget "Open in Mercury" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4F85B441B592E1400A252B3 /* Debug */,
+				C4F85B451B592E1400A252B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
