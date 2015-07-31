@@ -71,6 +71,7 @@
 																				 target:self
 																				 action:@selector(validateForm)];
         self.tableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
+        self.tableView.separatorInset = UIEdgeInsetsMake(0.0, 15.0, 0.0, 15.0);
         _lastOptionControllersCount = 1; //self is first on the nav controller stack
 	}
 	return self;
